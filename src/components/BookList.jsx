@@ -21,12 +21,10 @@ class BookList extends Component {
             />
           </Col>
         </Row>
-        <Row xs={1} sm={2} md={3} lg={5} className="gy-3">
+        <Row xs={1} sm={2} md={4} lg={6} className="">
           {this.props.books
             .filter((book) =>
-              book.title
-                .toLowerCase()
-                .includes(this.state.filterQuery.toLowerCase())
+              book.title.toLowerCase().includes(this.state.filterQuery.toLowerCase())
             )
             .map((book) => (
               <SingleBook book={book} key={book.asin} />
