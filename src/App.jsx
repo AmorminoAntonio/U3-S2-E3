@@ -4,7 +4,7 @@ import MyNav from "./components/MyNav";
 import Welcome from "./components/Welcome";
 import MyFooter from "./components/MyFooter";
 import BookList from "./components/BookList";
-import History from "./components/books/history.json"
+import History from "./components/books/history.json";
 
 function App() {
   return (
@@ -15,9 +15,8 @@ function App() {
         link2="About"
         link3="Browse"
       />
-      <Welcome  />
+      <Welcome />
       <BookList books={History} />
-
       <MyFooter />
     </>
   );

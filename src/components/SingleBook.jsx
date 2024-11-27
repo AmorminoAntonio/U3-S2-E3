@@ -1,15 +1,14 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-
-const SingleBook = (props) => {
+const SingleBook = ({ book }) => {
   return (
     <Container className="mb-5 mt-5">
       <Row className="justify-content-center">
-        <Col xs={8}>
-          <Card>
-            <Card.Img variant="top" src={props.book.img} />
+        <Col>
+          <Card className="shadow">
+            <Card.Img variant="top" src={book.img} />
             <Card.Body>
-              <Card.Title>{props.book.title}</Card.Title>
+              <Card.Title>{book.title}</Card.Title>
             </Card.Body>
           </Card>
         </Col>

@@ -1,7 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const MyNav = (props) => (
-  <Navbar bg="light" data-bs-theme="light">
+  <Navbar bg="dark-subtle" data-bs-theme="dark">
     <Container fluid className="ms-5 me-5">
       <Navbar.Brand href="#home" className="d-flex align-items-center">
         <span>THUNDER</span>
